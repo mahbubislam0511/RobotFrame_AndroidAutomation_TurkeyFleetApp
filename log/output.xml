@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.4 on win32)" generated="2024-05-15T11:35:38.101294" rpa="false" schemaversion="5">
+<suite id="s1" name="Open Application" source="C:\Users\mahbub.islam\PycharmProjects\RPA_SDET\RobotFrame_AndroidAutomation_TurkeyFleetApp\TestCases\Open_Application.robot">
+<test id="s1-t1" name="Open_Application" line="6">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://127.0.0.1:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=com.scibd.scifleet</arg>
+<arg>appActivity=com.scibd.scifleet.MainActivity</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-05-15T11:35:38.751379" elapsed="10.487560"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T11:35:59.242200" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T11:35:49.238939" elapsed="10.004774"/>
+</kw>
+<kw name="Click Skip" owner="OpenApplication_Keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-15T11:35:59.249722" level="INFO">Clicking element '//android.widget.Button[@content-desc='Skip']'.</msg>
+<msg time="2024-05-15T11:36:00.491416" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Skip']</msg>
+<arg>${btn_Skip}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-15T11:35:59.244719" elapsed="1.246697"/>
+</kw>
+<status status="PASS" start="2024-05-15T11:35:59.243713" elapsed="1.249221"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-15T11:36:03.493917" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-15T11:36:00.492934" elapsed="3.000983"/>
+</kw>
+<kw name="Click Done" owner="OpenApplication_Keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-05-15T11:36:03.496919" level="INFO">Clicking element '//android.widget.Button[@content-desc='DONE']'.</msg>
+<msg time="2024-05-15T11:36:04.509706" level="INFO">xpath criteria: //android.widget.Button[@content-desc='DONE']</msg>
+<arg>${btn_Done}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-05-15T11:36:03.494955" elapsed="1.014751"/>
+</kw>
+<status status="PASS" start="2024-05-15T11:36:03.493917" elapsed="1.015789"/>
+</kw>
+<status status="PASS" start="2024-05-15T11:35:38.749381" elapsed="25.760325"/>
+</test>
+<status status="PASS" start="2024-05-15T11:35:38.106810" elapsed="26.403895"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Open Application">Open Application</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
